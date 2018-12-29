@@ -1,4 +1,17 @@
-@WightColor: rgba(255, 255, 255, 0.24);
+// fonts
+// @font-face { font-family: 'Belinda';  src: local('Belinda'), url('https://nomail.com.ua/files/woff/511fa3633ac12a8d54bfc2a351ed7d2b.woff') format('woff'); }
+@font-face {
+    font-family: Belinda; /* Гарнитура шрифта */
+    src: url(../fonts/belinda.otf); /* Путь к файлу со шрифтом */
+}
+@import url(http://allfont.ru/allfont.css?fonts=open-sans);    
+@import url(http://allfont.ru/allfont.css?fonts=ubuntu-bold);
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans);
+
+
+// colors
+@WightColor: rgba(255, 255, 255, 1);
+@MintColor:#50c3af;
 
 
 html,
@@ -8,18 +21,75 @@ body{
     padding: 0;
 }
 .wrapper {
-    padding-left: 20%;
-    padding-right: 20%;
+    // padding-left: 20%;
+    // padding-right: 20%;
 
     // header
     header {
+        background: url(../img/header.jpg);
+        height: 100vh;
+        color: @WightColor;
+        padding-left: 20%;
+        padding-right: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         .logo {
             font-family: Belinda;
-            color: @WightColor;
-            font-size: 52px;
+            font-size: 3.25em;
             font-weight: 400;
-            text-align: center;
+            //text-align: center;
+            padding-top: 1em;
         }
+        nav li{
+            list-style-type: none;
+            display: inline-block;
+            a {
+                text-decoration: none;
+                font-family: 'Open Sans', arial;
+                color: @WightColor;
+                font-size: 0.813em;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        h1 {
+            font-family: 'Ubuntu', arial;
+            color: @WightColor;
+            font-size: 3.313em;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+        .quote{
+            font-family: 'PT Sans', arial;
+            color: @WightColor;
+            font-size: 0.938em;
+            font-weight: 700;
+        }
+        .quote::after{
 
+        }
+        .quote::before{
+
+        }
+    }
+    //buttons
+    .mint-btn{
+        background-color:  @MintColor;
+        font-family: 'PT Sans', arial;
+        color:  @WightColor;
+        font-size: 0.938em;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        padding-left: 2em;
+        padding-right: 2em;
+        border: none;
+        border-radius: 2em;
     }
 }
