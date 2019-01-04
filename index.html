@@ -1,36 +1,182 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <title>Lappo Polina</title>
 </head>
+
 <body>
-    <div class="wrapper">
-            <header>
-                <div class="logo">
-                    Polina
+    <header id='home'>
+        <div class="logo">
+            Polina
+        </div>
+        <nav>
+            <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#education'>Education</a></li>
+                <li><a href='#projects'>Projects</a></li>
+                <li><a href='#career'>Сareer</a></li>
+                <li><a href='#contact-us'>Contact us</a></li>
+            </ul>
+        </nav>
+        <h1>ideas for simple life</h1>
+        <div class="quote"><span>Review yourself, release yourself</span></div>
+        <a href="#contact-us" class="btn mint-btn">Contact us</a>
+        <a href="#education"><img src="img/down-arrow.svg" alt=""></a>
+    </header>
+    <main>
+        <section class="small-section" id="education">
+            <h2>Education</h2>
+            <div class="edu-flex">
+                <div class="step">
+                    <img src="img/study.svg" alt="">
+                    <div class="desc">
+                        <h3>Bachelor <br>of IT</h3>
+                        <hr>
+                        <p>2012-2016</p>
+                        <p>ITMO University</p>
+                    </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Education</a></li>
-                        <li><a href='#'>Career</a></li>
-                        <li><a href='#'>Projects</a></li>
-                    </ul>
-                </nav>
-                <h1>Have a good day</h1>
-                <div class="quote">Review yourself, release yourself</div>
-                <button class="mint-btn">next</button>
-            </header>
-            <main>
-                <section class="large-section"></section>
-                <section class="small-section"></section>
-                <section class="large-section"></section>
-                <section class="small-section"></section>
-            </main>
-            <footer></footer>
-    </div>
+                <div class="step">
+                    <img src="img/badge.svg" alt="">
+                    <div class="desc">
+                        <h3>Agile <br>managment</h3>
+                        <hr>
+                        <p>2018</p>
+                        <p>PMBLC</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/college.svg" alt="">
+                    <div class="desc">
+                        <h3>Master <br> of IT</h3>
+                        <hr>
+                        <p>2016-1018</p>
+                        <p>ITMO University</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/book.svg" alt="">
+                    <div class="desc">
+                        <h3>Interactive <br> courses</h3>
+                        <hr>
+                        <p>2018</p>
+                        <p>HTML Academy</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/progression.svg" alt="">
+                    <div class="desc">
+                        <h3>JavaScript <br>Developer</h3>
+                        <hr>
+                        <p>2018-2019</p>
+                        <p>GeekBrains</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="large-section" id="projects">
+                <h2>Projects</h2>
+                <h2>Comming soon</h2>
+                <div class="contact-flex">
+                </div>
+        </section>
+        <section class="small-section" id="career">
+            <h2>Сareer</h2>
+            <div class="edu-flex">
+                <div class="step">
+                    <img src="img/businessman.svg" alt="">
+                    <div class="desc">
+                        <h3>System Analytics</h3>
+                        <hr>
+                        <p>2016-2017</p>
+                        <p>Soft-Werke</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/line-chart.svg" alt="">
+                    <div class="desc">
+                        <h3>Test Engineer</h3>
+                        <hr>
+                        <p>2016-2017</p>
+                        <p>Soft-Werke</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <img src="img/pie-chart.svg" alt="">
+                    <div class="desc">
+                        <h3>Frontend Developer</h3>
+                        <hr>
+                        <p>2017-...</p>
+                        <p>Soft-Werke</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="large-section" id="contact-us">
+                <h2>Contacts</h2>
+                <div class="contact-flex">
+                    <div class="contact-info">
+                        <div class="email">
+                            <h3>email</h3>
+                            <p><a href="mailto:miss.lappo@yandex.ru">miss.lappo@yandex.ru</a></p>
+                        </div>
+                        <div class="telegram">
+                            <h3>Telegram</h3>
+                            <p><a href="#">@PaulinaLappo</a></p>
+                        </div>
+                        <div class="skype">
+                            <h3>Skype</h3>
+                            <p><a href="#">polina.lappo</a></p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label>
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </label>
+                        <label>
+                            <input type="text" name="name" id="name" placeholder="name">
+                        </label>
+                        <label>
+                            <textarea name="comments" id="comments" placeholder="comments"></textarea>
+                        </label>
+                        <input type="submit" value="Sent" class="btn mint-btn">
+                    </form>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <section class="mint-block" id="technology">
+            <h2>Technology</h2>
+            <div class="images">
+                <img src="img/html.png" alt="">
+                <img src="img/css.png" alt="">
+                <img src="img/javascript.png" alt="">
+                <img src="img/jquery.png" alt="">
+                <img src="img/git.png" alt="">
+            </div>
+            <div class="images">
+                    
+                    <img src="img/reactjs.png" alt="">
+                    <img src="img/node.png" alt="">
+                    <img src="img/less.png" alt="">
+                    <img src="img/gulp.png" alt="">
+                    <img src="img/ootstrap.png" alt="">
+                </div>
+        </section>
+        <section class="grey-block">
+            <span class="copy"><span class="bold">PolinkaLa</span> copyright 2019</span>
+            <span class="social">
+                <a href="#" target="_blank"><img src="img/github.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="img/facebook.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="img/vk.svg" alt=""></a>
+            </span>
+        </section>
+    </footer>
 </body>
 </html>
